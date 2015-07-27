@@ -1,0 +1,6 @@
+.b-nav(ng-controller='navController as nav')
+	span.b-nav__toogle-button(ng-click='nav.visible = !nav.visible')
+		.b-icon
+	ul.b-nav__menu(ng-show='nav.visible')
+		li.b-menu-item(ng-repeat='item in nav.menu')
+			a(scrollspy-listen="{{item}}" ng-click="nav.gotoElement('{{item}}')") {{item}}

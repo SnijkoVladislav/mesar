@@ -1,0 +1,10 @@
+.h-blog(ng-controller="blogController as blog")
+	.h-blog__header
+		h2.b-title {{blog.title}}
+	.h-blog__content
+		.h-columns(ng-repeat="col in blog.posts")
+			.b-post(ng-repeat="item in col track by $index")
+				h4.b-post__title {{item.title}}
+				span.b-post__date {{item.date}}
+				p.b-post__text {{item.text}}
+				a.b-post__more-link Read more

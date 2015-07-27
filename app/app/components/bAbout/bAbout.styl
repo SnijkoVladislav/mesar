@@ -1,0 +1,74 @@
+.h-col
+	&._1in3
+		col(1/3)
+		+below(800px)
+			col(1/1)
+
+
+.b-title
+	display inline-block
+	text-transform uppercase
+	font-weight 800
+	background #000
+	color #fff
+	padding 5px 6px
+	letter-spacing 5px
+	font-size 15px
+	font-family 'Open Sans', sans-serif
+	&._about-content
+		padding-top 0
+		margin-top 0
+		margin-bottom 30px
+		font-size 45px
+		letter-spacing 4px
+		margin 0px 0px 15px
+		+below(800px)
+			font-size 35px
+
+.b-text
+	font-family 'Gentium Basic', serif
+	line-height 30px
+	letter-spacing 2px
+	font-size 15px
+	color #888
+
+.b-info
+	margin 0px
+	padding 0px
+	&__item
+		letter-spacing 1px
+		list-style none
+		line-height 40px
+		font-size 16px
+		font-family 'Gentium Basic', serif
+		color #888
+		b
+			color #000
+
+.b-skills
+	&__title
+		font-size 12px
+		font-weight bold
+		text-transform uppercase
+		margin-bottom 3px
+
+.b-indicator
+	margin-bottom 25px
+	overflow hidden
+	background-color #f2f2f2
+	border-radius 4px
+	width 100%
+	float left
+	&__arrow
+		float left
+		width 0
+		height 100%
+		font-size 12px
+		line-height 18px
+		color #fff
+		margin 5px
+		text-align center
+		background-color #ffdb43
+		border-radius 4px
+		transition width .6s ease
+		display block

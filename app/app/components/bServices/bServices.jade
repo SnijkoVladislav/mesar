@@ -1,0 +1,8 @@
+.h-services(ng-controller="servicesController as ser")
+	.h-services__header
+		h2.b-title {{ser.title}}
+	.h-services__content
+		.b-services-item(ng-repeat="item in ser.items")
+			span.b-services-item__img(class="_icon_{{item.title}}")
+			h4.b-services-item__title {{item.title}}
+			p.b-services-item__desc {{item.desc}}

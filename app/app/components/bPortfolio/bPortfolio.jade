@@ -1,0 +1,15 @@
+.b-portfilio(ng-controller="portfolioController as port")
+	h2.b-portfilio__title {{port.title}}
+	.b-portfilio__content
+		.h-columns(ng-repeat="col in port.articles")
+			.b-article(ng-repeat-start="item in col track by $index")
+				button.b-article__name(ng-click="port.articleDisc[item.name] = true" ng-init="port.articleDisc[item.name] = false") {{item.name}}
+				img.b-article__previewImg(ng-src="./assets/images/portfolio/{{item.previewImg}}")
+			.h-article-disc(ng-show="port.articleDisc[item.name]" ng-click="port.articleDisc[item.name] = false")
+				.b-article-disc
+					img.b-article-disc__img(ng-src="./assets/images/portfolio/{{item.img}}")
+					h5.b-article-disc__title {{item.title}}
+					p.b-article-disc__text {{item.text}}
+					.b-article-disc__close
+						button.b-close(ng-click="port.articleDisc[item.name] = false")
+			.h-article-end(ng-repeat-end)

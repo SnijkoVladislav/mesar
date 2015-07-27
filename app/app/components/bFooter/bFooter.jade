@@ -1,8 +1,0 @@
-.h-footer(ng-controller='footerController as footer')
-	.h-footer__item._size-1in3
-		span.b-copywrite {{footer.copywrite}}
-	.h-footer__item._size-1in3
-		a.b-beack-to-top(ng-click="footer.gotoElement('js_toTop')")  {{footer.toTop}}
-	.h-footer__item._size-1in3
-		ul.b-social
-			li.b-social__item(ng-repeat="item in footer.social" class="_{{item}}")

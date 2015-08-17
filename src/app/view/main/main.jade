@@ -1,0 +1,57 @@
+.h-page-home
+	header.l-home-header
+		.l-home-header__logo
+			include ../../components/logo/logo.jade
+		.l-home-header__nav
+			include ../../components/nav/nav.jade
+
+	article.l-home-desc._an-start-point_left._an_js_endPoint(
+			id="intro"
+			scrollspy-broadcast
+			scr-target-dirc
+			scr-target-dirc-addclass="_an_js_endPoint"
+	 	)
+		include ../../components/desc/desc.jade
+
+	article.l-home-portfolio._an-start-point_left._an_js_endPoint(
+			id="portfolio"
+			scrollspy-broadcast
+			scr-target-dirc
+			scr-target-dirc-addclass="_an_js_endPoint"
+		)
+		include ../../components/portfolio/portfolio.jade
+
+	article.l-home-about._an-start-point_left(
+			id="about"
+			scrollspy-broadcast
+			scr-target-dirc
+			scr-target-dirc-addclass="_an_js_endPoint"
+		)
+		include ../../components/about/about.jade
+
+	article.l-home-services._an-start-point_left(
+			id="services"
+			scrollspy-broadcast
+			scr-target-dirc
+			scr-target-dirc-addclass="_an_js_endPoint"
+		)
+		include ../../components/services/services.jade
+
+	article.l-home-blog._an-start-point_left(
+			id="blog"
+			scrollspy-broadcast
+			scr-target-dirc
+			scr-target-dirc-addclass="_an_js_endPoint"
+		)
+		include ../../components/blog/blog.jade
+
+	article.l-home-contact._an-start-point_left._an_js_endPoint(
+			id="contact"
+			scrollspy-broadcast
+			scr-target-dirc
+			scr-target-dirc-addclass="_an_js_endPoint"
+		)
+		include ../../components/contact/contact.jade
+
+	footer.l-home-footer
+		include ../../components/footer/footer.jade

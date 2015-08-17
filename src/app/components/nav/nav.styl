@@ -1,0 +1,92 @@
+.b-nav
+	cf()
+	&__toogle-button
+		height 34px
+		width 42px
+		display inline-block
+		position relative
+		padding 5px 0px 11px 0px
+		background-color #f3d756
+		float right
+		cursor pointer
+	&__menu
+		position relative
+		display inline-block
+		float right
+		margin 0px
+		padding 0px 20px 0px 0px
+		background-color #f3d756
+		transition all 0.25s linear
+
+		&.ng-hide-remove
+			opacity 0
+			top -80px
+		&.ng-hide-remove-active
+			opacity 1
+			top 0px
+
+		&.ng-hide-add
+			opacity 1
+			top 0px
+		&.ng-hide-add-active
+			opacity 0
+			top -80px
+
+.b-menu-item
+	display inline-block
+	padding 0
+	margin 0
+	z-index 1000
+	list-style-type none
+	a
+		display block
+		padding 0 15px
+		color #222
+		line-height 50px
+		font-size 11px
+		font-weight bold
+		text-transform uppercase
+		text-align left
+		letter-spacing 3px
+		text-decoration none
+		cursor pointer
+		transition all 0.25s ease-in
+		&:hover
+			color #FFF
+
+		&.active
+			background-color #000
+			color #FFF
+
+
+$height = 2px
+$width = 22px
+$separateDistance = 5px
+$col = #000
+
+.b-icon
+	height $height
+	width $width
+	align()
+	background-color $col
+	&:hover
+		width $width + 5px
+		&:before
+			width $width + 5px
+		&:after
+			width $width + 5px
+
+	&:before
+		height $height
+		width $width
+		align()
+		top -($separateDistance)
+		content ''
+		background-color $col
+	&:after
+		height $height
+		width $width
+		align()
+		top (($separateDistance + $separateDistance) - $height)
+		content ''
+		background-color $col

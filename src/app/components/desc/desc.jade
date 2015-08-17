@@ -1,0 +1,6 @@
+.b-desc(ng-controller="descController as desc")
+	.h-col-left
+		h2.b-desc__title {{desc.title}}
+		p.b-desc__text {{desc.text}}
+	.h-col-right
+		img.b-desc__img._round(ng-src="./assets/images/{{desc.img}}" alt="desc img")

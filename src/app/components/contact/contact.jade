@@ -1,0 +1,49 @@
+.h-contact(ng-controller='contactController as con')
+	.h-contact__header
+		h2.b-title contact
+	.h-contact__content
+		form.h-form
+			fieldset.b-form
+				.h-form__item._size-1in3
+					input.b-form__item(
+							name="name"
+							type="text"
+							id="name"
+							placeholder="Name* :"
+							value
+							required
+						)
+				.h-form__item._size-1in3
+					input.b-form__item(
+							name="email"
+							type="email"
+							id="email"
+							placeholder="E-mail* :"
+							value
+							required
+						)
+				.h-form__item._size-1in3
+					input.b-form__item(
+							name="subject"
+							type="text"
+							id="subject"
+							placeholder="Subject* :"
+							value
+							required
+						)
+				.h-form__item._size-1in1
+					textarea.b-form__item(
+							name="comments"
+							cols="40"
+							rows="5"
+							placeholder="Message* :"
+							id="comments"
+							required
+						)
+				.h-form__item._size-1in1
+					input.b-form__item._button(
+							name="submit"
+							type="submit"
+							id="submit"
+							value="Send message"
+						)

@@ -1,0 +1,81 @@
+.h-page-home
+	margin 25px 0px 25px 0px
+	center(1300px)
+	background-color #fff
+	cf()
+
+.l-home
+	overflow hidden
+
+	&-header
+		position fixed
+		center(1300px)
+		width 100%
+		z-index 999
+		cf()
+		&__logo
+			display inline-block
+			@extends $pull-L
+			@import "../../components/logo/logo.styl"
+		&__nav
+			display inline-block
+			@extends $pull-R
+			@import "../../components/nav/nav.styl"
+
+	&-desc
+		center(1300px, 25px)
+		@import "../../components/desc/desc.styl"
+		&._an-start-point_left
+			@extends $_animation-start-point_opacity
+			@extends $_animation_trs
+		&._an_js_endPoint
+			@extends $_animation-end-point
+
+	&-portfolio
+		center(1300px, 25px)
+		@import "../../components/portfolio/portfolio.styl"
+		&._an-start-point_left
+			@extends $_animation-start-point_opacity
+			@extends $_animation_trs
+		&._an_js_endPoint
+			@extends $_animation-end-point
+
+	&-about
+		center(1300px, 25px)
+		@import "../../components/about/about.styl"
+		&._an-start-point_left
+			@extends $_animation-start-point_opacity
+			@extends $_animation_trs
+		&._an_js_endPoint
+			@extends $_animation-end-point
+
+	&-services
+		center(1300px)
+		@import "../../components/services/services.styl"
+		&._an-start-point_left
+			@extends $_animation-start-point_opacity
+			@extends $_animation_trs
+		&._an_js_endPoint
+			@extends $_animation-end-point
+
+	&-blog
+		center(1300px, 25px)
+		@import "../../components/blog/blog.styl"
+		&._an-start-point_left
+			@extends $_animation-start-point_opacity
+			@extends $_animation_trs
+		&._an_js_endPoint
+			@extends $_animation-end-point
+
+	&-contact
+		center(1300px)
+		@import "../../components/contact/contact.styl"
+		&._an-start-point_left
+			@extends $_animation-start-point_opacity
+			@extends $_animation_trs
+		&._an_js_endPoint
+			@extends $_animation-end-point
+
+	&-footer
+		center(1300px, 25px)
+		@import "../../components/footer/footer.styl"

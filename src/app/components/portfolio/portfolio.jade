@@ -1,0 +1,13 @@
+.b-portfilio(ng-controller="portfolioController as port")
+	h2.b-portfilio__title {{port.title}}
+	.b-portfilio__content
+		.h-columns(ng-repeat="col in port.articles")
+			a.b-article(href="#" ng-repeat-start="item in col track by $index")
+				span.b-article__name(ng-click="port.active(item.name)" ng-init="port.articleDisc[item.name] = false") {{item.name}}
+				img.b-article__previewImg(ng-src="./assets/images/portfolio/{{item.previewImg}}")
+			.h-article-disc(ng-repeat-end ng-show="port.articleDisc[item.name]" ng-click="port.active(item.name)")
+				.b-article-disc(ng-click="$event.stopPropagation();")
+					img.b-article-disc__img(ng-src="./assets/images/portfolio/{{item.img}}")
+					h5.b-article-disc__title {{item.title}}
+					p.b-article-disc__text {{item.text}}
+					span.b-article-disc__close(ng-click="port.active(item.name)") +
